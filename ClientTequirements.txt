@@ -3,9 +3,28 @@ CUSTOMER REQUIRMENTS:
 Client wants to creat a Road Acicent Analysis Dashboard for the year 2021 and 2021 ao that they can have insight on the requirements below:
 
 Pimary KPI - Total Casualties and Total Accident values for Current Year and YoY growth
+You must understand such things as how to calulate the Total Casualties for the Current Year and how to Calculate the Total Accidents for the Current Year using the TOTALYTD() Function
+And you can derive the Year on Year value by using this formula:
+(Current Year Vaue - Previous Year Value)/Previous Year Value
+CY Casualties = TOTALYTD(SUM(Data[Number_of_Casualties]), 'Calendar'[Date])
+YoY Casualties = ([CY Casualties] - [PY Casualties])/[PY Casualties]
+CY Accidents = TOTALYTD(COUNT(Data[Accident_Index]),'Calendar'[Date])
+YoY Accidents = ([CY Accidents] - [PY Accidents])/[PY Accidents]
+
 Primary KPI's - Total Casualties by Accident Severity for Current Year and YoY growth
-Secondaty KPI's - Total Casualties with respect to vehicle type for Current Year
+In order to do this, we will be using filters because we have calculated the "Total Casualties and Total Accidents already". Now, we need to report the value of the Total Accidents or Total Casualites by Severity such as (Fatal, Serious and Slight)
+
+
+Secondary KPI's - Total Casualties with respect to Vehicle type for Current Year
+
+
 Monthly trend showing comparison of casualties for Current Year and Previous Year
+
+
 Casualties by Road Type for Current Year
+
+
 Current Year Casualties by Area / Location and by Day / Night
+
+
 Total Casualties and Total Accidents by Location
