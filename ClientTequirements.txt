@@ -16,9 +16,14 @@ In order to do this, we will be using filters because we have calculated the "To
 
 
 Secondary KPI's - Total Casualties with respect to Vehicle type for Current Year
+What we are going to do here is to seperate these types into about 6 different categories by GROUPING them.
+And the the various groups will be: (Agricultural, Bike, Bus, Car,  Others, Van)
+After the Vehicle types have been categorized by grouping, we can use the "Multiple Row Card" to visualize these data.
 
 
 Monthly trend showing comparison of casualties for Current Year and Previous Year
+You can use the Area Chart in such a way that you have Months on the X axis, Number of Casualties on the Y axis in combination with the Date hierarchy added to the Legends
+***But note that you have to create a new Column for the Month Number from the Calender Date, in Data View, then use this newly created Column to Sort the "Month" Column, in order to have the dates formatted in ascending order correctly.
 
 
 Casualties by Road Type for Current Year
