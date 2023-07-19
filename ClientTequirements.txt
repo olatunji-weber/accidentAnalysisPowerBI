@@ -29,7 +29,18 @@ You can use the Area Chart in such a way that you have Months on the X axis, Num
 Casualties by Road Type for Current Year
 
 
-Current Year Casualties by Area / Location and by Day / Night
+Current Year Casualties by Area / Location
+Use Donut Chart for these. Put the "Urban_or_Rural_Area" measure into the Legend field and the "CY Casualties" into the Values field.
+
+Current Year Casualties by Day / Night
+Now, we can duplicate the Donut Chart that we just completed and change out the "Urban_or_Rural_Area" measure with the "Light_Conditions" in the Legend field After we have grouped the "Light_Conditions" into "Dark" and "Day".
 
 
 Total Casualties and Total Accidents by Location
+This will be  a Bar chart where we will put the Road Type measure on the Y axis and the CY Casualties on the X axis.
+
+And finally, in order to do the Map Visualization, we will use the Map Chart. First of all bring in the Longitude and the Latitude measures, and select their average options. Then add the "Local_Authority_Distribution" into the Location field.
+*** If Map Visuals are disabled in your Power BI application, you can enable it by going to:> File> Options and Settings> Options> Global> Security>
+
+
+
